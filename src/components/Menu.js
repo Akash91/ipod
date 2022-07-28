@@ -5,6 +5,7 @@ import games from "../images/games.png";
 import settings from "../images/settings.png";
 import cover from "../images/cover.png";
 import music from "../images/music.png";
+import {trackDragEvent} from "../utils/util";
 
 
 class Menu extends Component {
@@ -35,30 +36,15 @@ class Menu extends Component {
         });
 
         document.addEventListener('mousedown', function(e) {
-            window.interval = setInterval(function() {
-                if(window._e !== undefined) {
-                    let currValue = window._e.detail.data[0].distanceFromOrigin;
-                    let currDir = window._e.detail.data[0].directionFromOrigin;
-                    if(currValue-window.prevValue > 10) {
-                        if(currDir-window.prevDir > 10) {
-                            let rotateEle = window.menuArray.pop();
-                            window.menuArray.unshift(rotateEle);
-                            console.log('left', window.menuArray);
-                            _this.setState({highlighted: window.menuArray[0]});
-                        }
-                        if(currDir-window.prevDir < -10) {
-                            let rotateEle = window.menuArray.shift();
-                            window.menuArray.push(rotateEle);
-                            console.log('right', window.menuArray);
-                            _this.setState({highlighted: window.menuArray[0]});
-                        }
-                    }
-                    window.prevValue = currValue;
-                    window.prevDir = currDir;
-                }
-            }, 200)
+            trackDragEvent(_this);
+        });
+        document.addEventListener('touchstart', function(e) {
+            trackDragEvent(_this);
         });
         document.addEventListener('mouseup', function(e) {
+            clearInterval(window.interval);
+        });
+        document.addEventListener('touchend', function(e) {
             clearInterval(window.interval);
         });
     }
