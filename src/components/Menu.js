@@ -132,8 +132,8 @@ class Menu extends Component {
                     }
                 </div>
                 <div id="region" className="touch-region">
-                    <i onClick={this.handleBack}></i>
-                    <span onClick={this.handleSelect}>
+                    <i onTouchStart={this.handleBack} onClick={this.handleBack}></i>
+                    <span onTouchStart={this.handleSelect} onClick={this.handleSelect}>
                     </span>
                 </div>
             </div>
