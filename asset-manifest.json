@@ -1,0 +1,18 @@
+{
+  "main.css": "/ipod/static/css/main.41f78cfc.chunk.css",
+  "main.js": "/ipod/static/js/main.86551f38.chunk.js",
+  "main.js.map": "/ipod/static/js/main.86551f38.chunk.js.map",
+  "runtime~main.js": "/ipod/static/js/runtime~main.4319e8b4.js",
+  "runtime~main.js.map": "/ipod/static/js/runtime~main.4319e8b4.js.map",
+  "static/js/2.9702c452.chunk.js": "/ipod/static/js/2.9702c452.chunk.js",
+  "static/js/2.9702c452.chunk.js.map": "/ipod/static/js/2.9702c452.chunk.js.map",
+  "index.html": "/ipod/index.html",
+  "precache-manifest.9814417dfdbd5123f4312b22c18adf95.js": "/ipod/precache-manifest.9814417dfdbd5123f4312b22c18adf95.js",
+  "service-worker.js": "/ipod/service-worker.js",
+  "static/css/main.41f78cfc.chunk.css.map": "/ipod/static/css/main.41f78cfc.chunk.css.map",
+  "static/media/cover.png": "/ipod/static/media/cover.89583f2d.png",
+  "static/media/games.png": "/ipod/static/media/games.6c29fb46.png",
+  "static/media/main.css": "/ipod/static/media/ipod_bg.c2a2f90f.jpeg",
+  "static/media/music.png": "/ipod/static/media/music.b1de0421.png",
+  "static/media/settings.png": "/ipod/static/media/settings.a3d9f9e7.png"
+}
