@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/ipod/static/media/music.b1de0421.png"
   },
   {
-    "revision": "b2c485c12c22a2862b2db8fa67c598a8",
-    "url": "/ipod/static/media/ipod.b2c485c1.png"
-  },
-  {
     "revision": "c2a2f90fd895232c9759469ffbbe6e48",
     "url": "/ipod/static/media/ipod_bg.c2a2f90f.jpeg"
+  },
+  {
+    "revision": "b2c485c12c22a2862b2db8fa67c598a8",
+    "url": "/ipod/static/media/ipod.b2c485c1.png"
   },
   {
     "revision": "dd8f79686e46b1f88e7859b55d8ce6c7",
