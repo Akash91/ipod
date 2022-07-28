@@ -2,13 +2,17 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://akash91.github.io/ipod/",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-scripts": "2.1.5",
     "zingtouch": "^1.0.6"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build", 
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
